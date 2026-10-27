@@ -28,10 +28,11 @@
 | Pygame | 事件處理、繪製視窗、按鈕與圖片 |
 | NumPy | 貓咪／X 筆記矩陣與規則驗證 |
 | JSON | 可讀的 6×6 關卡矩陣資料 |
-| 回溯／排列組合／BFS | 搜尋候選答案、驗證唯一解與區域連通 |
+| 排列枚舉／約束篩選 | `Puzzle.find_all_solutions()` 搜尋符合規則的答案 |
+| DFS／BFS | 離線關卡生成與顏色區域連通性檢查 |
 | unittest | 關卡、操作歷史與資源的自動化測試 |
 
-程式架構說明：[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)。
+程式架構說明：[執行架構](docs/ARCHITECTURE.md) · [UML 核心類別圖](docs/UML_CLASS_DIAGRAM.md)。
 
 ## 安裝與執行
 
@@ -83,7 +84,7 @@ cat-puzzle-python/
 ├── levels/                 # JSON 關卡資料
 ├── tools/                  # 離線關卡生成器
 ├── tests/                  # 自動化測試
-├── screenshots/            # 實際遊戲截圖（待補）
+├── screenshots/            # 遊戲畫面與提示功能截圖
 ├── docs/                   # 公開的技術架構說明
 ├── requirements.txt
 └── README.md
@@ -112,8 +113,8 @@ python -m unittest discover -s tests -v
 
 ## 發布與授權
 
-- 建議第一次 GitHub 正式公開發布使用標籤 `v1.0.0`，但需完成發布前檢查。
+- 首次正式發布版本為 `v1.0.0`；請至 GitHub 的 Releases 頁面查看版本說明與下載內容。
 - 目前**未宣告開源授權**。公開 GitHub 原始碼不等於允許第三方自由重製或再散布；若有需要，另行決定程式碼與美術素材的授權。
 - GitHub Releases 會提供每次 Tag 對應的原始碼下載；目前不提供 exe 安裝包。
 
-更多資訊：[技術架構](docs/ARCHITECTURE.md) · [版本紀錄](CHANGELOG.md)
+更多資訊：[技術架構](docs/ARCHITECTURE.md) · [UML 類別圖](docs/UML_CLASS_DIAGRAM.md) · [版本紀錄](CHANGELOG.md)
