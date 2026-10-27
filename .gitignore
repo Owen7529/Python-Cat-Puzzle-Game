@@ -1,0 +1,61 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE/system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local logs, builds and packages
+*.log
+build/
+dist/
+*.egg-info/
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+
+# Avoid committing large local debugging results
+coverage.xml
+.coverage
+htmlcov/
+
+# Local-only project management / verification notes (retain locally)
+/PROJECT_SPEC.md
+/PROJECT_STATUS.md
+/FILE_STRUCTURE.md
+/VALIDATION.txt
+
+# Internal preparation guides / personal notes (not for public repository)
+/docs/GITHUB_DESKTOP_STEPS.md
+/docs/PUBLISH_CHECKLIST.md
+/docs/DEMO_AND_SCREENSHOTS.md
+/docs/PORTFOLIO_TEXT.md
+/docs/UPLOADED_ZIP_AUDIT.md
+/RELEASE_NOTES.md
+/README_請先讀.txt
+
+# Archives created for distribution / backup (GitHub Releases auto provides source ZIP)
+/*.zip
+/*.7z
+/*.rar
+
+# Temporary screenshot-folder placeholder; real gameplay screenshots remain allowed
+/screenshots/.gitkeep
+
+# Additional platform caches
+Desktop.ini
+*.tmp
+*.bak
